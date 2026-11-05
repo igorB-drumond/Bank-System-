@@ -1,0 +1,6 @@
+<script>start("c:\\Bank_sytem\\core-banking\\src\\main\\java\\com\\banco\\core_banking\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("CoreBankingApplication.java","CoreBankingApplication.java",0,325,"325 B",1792958275,"25/10/2026, 16:57:55");</script>
+<script>addRow("ledger.java","ledger.java",0,1211,"1.2 kB",1792958272,"25/10/2026, 16:57:52");</script>
+<script>addRow("ledgerRepository.java","ledgerRepository.java",0,270,"270 B",1792958274,"25/10/2026, 16:57:54");</script>
+<script>addRow("TransactionService.java","TransactionService.java",0,79,"79 B",1792958277,"25/10/2026, 16:57:57");</script>

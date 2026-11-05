@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package banking.fraud;
+
+option java_multiple_files = true;
+option java_package = "com.banco.core.grpc.fraud";
+
+//Service que o Python vai expor e o java consumir.
+service FraudDetectionService {
+    rpc AnalyzeTransaction (TransactionRequest) returns (RiskAnalysisResponse);
+}
+
+message TransactionRequest{
+    string transaction_id = 1;
+    string account_origin = 2;
+    string account_destination = 3;
+    double amount = 4;
+    int64 timestamp = 5;
+    string location_lat_lon = 6;
+}
+
+message RiskAnalysisResponse{
+    string transaction_id = 1;
+    double risk_score = 2;
+    bool is_approved = 3;
+    string rejection_reason = 4;
+}
